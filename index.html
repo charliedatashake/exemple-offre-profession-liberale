@@ -57,7 +57,8 @@
   section.grey .card{background:#fff;}
   .card h3{color:var(--ink);}
   .card .ico{width:46px;height:46px;background:var(--orange);margin-bottom:16px;display:flex;align-items:center;justify-content:center;color:#fff;font-family:var(--font-title);font-size:22px;}
-  a.card .more{color:var(--orange);font-weight:700;font-size:14px;text-transform:uppercase;}
+  .card .more{display:inline-block;margin-top:8px;color:var(--orange);font-weight:700;font-size:14px;text-transform:uppercase;}
+  .card .more:hover{text-decoration:underline;}
   /* Etapes */
   .step{display:flex;gap:22px;padding:22px 0;border-top:1px solid #dfe6ec;}
   .step:first-child{border-top:0;}
@@ -162,11 +163,11 @@
     <h2>Ce que couvre votre expert-comptable</h2>
     <p class="lead">Votre accompagnement va bien au-delà du bilan annuel. Vous disposez d'un suivi complet, pensé pour les contraintes de l'exercice libéral.</p>
     <div class="grid g3" style="margin-top:34px;">
-      <a class="card" href="https://www.inextenso.fr/nos-offres/comptabilite/"><div class="ico">1</div><h3>Tenue de la comptabilité et obligations BNC</h3><p>Suivi de vos recettes et dépenses, déclaration 2035, des comptes clairs pour piloter votre activité.</p><span class="more">En savoir plus &rsaquo;</span></a>
-      <a class="card" href="https://www.inextenso.fr/nos-offres/fiscalite/declarations-fiscales/"><div class="ico">2</div><h3>Déclarations fiscales et choix du régime</h3><p>Choix micro-BNC ou régime réel, TVA, optimisation. L'objectif, payer le juste impôt sans risque.</p><span class="more">En savoir plus &rsaquo;</span></a>
-      <a class="card" href="https://www.inextenso.fr/nos-offres/gestion-sociale-et-paie/"><div class="ico">3</div><h3>Gestion sociale, paie et cotisations</h3><p>Bulletins de paie, déclarations sociales et anticipation de vos cotisations personnelles.</p><span class="more">En savoir plus &rsaquo;</span></a>
-      <a class="card" href="https://www.inextenso.fr/nos-offres/juridique/"><div class="ico">4</div><h3>Conseil juridique et forme d'exercice</h3><p>Choix de la forme juridique, statuts et évolutions de structure, en individuel comme en société.</p><span class="more">En savoir plus &rsaquo;</span></a>
-      <a class="card" href="https://www.inextenso.fr/nos-offres/gestion-patrimoine/"><div class="ico">5</div><h3>Optimisation rémunération et patrimoine</h3><p>Arbitrage rémunération/dividendes, préparation de la retraite et structuration patrimoniale.</p><span class="more">En savoir plus &rsaquo;</span></a>
+      <div class="card"><div class="ico">1</div><h3>Tenue de la comptabilité et obligations BNC</h3><p>Suivi de vos recettes et dépenses, déclaration 2035, des comptes clairs pour piloter votre activité.</p><a class="more" href="https://www.inextenso.fr/nos-offres/comptabilite/">Comptabilité &rsaquo;</a></div>
+      <div class="card"><div class="ico">2</div><h3>Déclarations fiscales et choix du régime</h3><p>Choix micro-BNC ou régime réel, TVA, optimisation. L'objectif, payer le juste impôt sans risque.</p><a class="more" href="https://www.inextenso.fr/nos-offres/fiscalite/declarations-fiscales/">Déclarations fiscales &rsaquo;</a></div>
+      <div class="card"><div class="ico">3</div><h3>Gestion sociale, paie et cotisations</h3><p>Bulletins de paie, déclarations sociales et anticipation de vos cotisations personnelles.</p><a class="more" href="https://www.inextenso.fr/nos-offres/gestion-sociale-et-paie/">Gestion sociale et paie &rsaquo;</a></div>
+      <div class="card"><div class="ico">4</div><h3>Conseil juridique et forme d'exercice</h3><p>Choix de la forme juridique, statuts et évolutions de structure, en individuel comme en société.</p><a class="more" href="https://www.inextenso.fr/nos-offres/juridique/">Conseil juridique &rsaquo;</a></div>
+      <div class="card"><div class="ico">5</div><h3>Optimisation rémunération et patrimoine</h3><p>Arbitrage rémunération/dividendes, préparation de la retraite et structuration patrimoniale.</p><a class="more" href="https://www.inextenso.fr/nos-offres/gestion-patrimoine/">Gestion de patrimoine &rsaquo;</a></div>
     </div>
     <p class="note">Maillage interne contextualisé vers les pages piliers /nos-offres/ existantes.</p>
   </div>
