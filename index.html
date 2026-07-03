@@ -104,7 +104,32 @@
   ul.check li{padding:8px 0 8px 30px;position:relative;}
   ul.check li:before{content:"";position:absolute;left:0;top:15px;width:14px;height:14px;background:var(--orange);}
   .note{margin-top:14px;font-size:15px;color:#5d5d5d;}
-  @media(max-width:900px){.g3,.g4,.g2,.conv{grid-template-columns:1fr;}h1{font-size:40px;}h2{font-size:32px;}table.cmp,table.cmp tbody,table.cmp tr,table.cmp td{display:block;width:100%;}table.cmp th{display:none;}table.cmp tr{border-bottom:2px solid var(--ink);margin-bottom:12px;}table.cmp tr td:first-child{width:100%;}}
+  /* Chiffre cle (reassurance) */
+  .stats{background:var(--ink);color:#fff;text-align:center;padding:66px 0;}
+  .stats .num{font-family:var(--font-title);font-size:112px;line-height:.9;letter-spacing:.02em;margin:0;text-shadow:5px 5px 0 rgba(255,255,255,.12);}
+  .stats .lab{display:inline-block;background:#fff;color:var(--ink);font-family:var(--font-title);text-transform:uppercase;font-weight:600;font-size:22px;letter-spacing:.03em;padding:12px 26px;margin-top:22px;}
+  /* Actualites / blog */
+  .posts{display:grid;grid-template-columns:repeat(3,1fr);gap:26px;margin-top:34px;}
+  .post{display:flex;flex-direction:column;background:#eaf6fb;}
+  .post .media{position:relative;aspect-ratio:16/10;background:#dfe6ec linear-gradient(135deg,#cfd8e0,#eef3f7);}
+  .post .cat{position:absolute;top:0;left:0;color:#fff;font-family:var(--font-body);font-weight:700;font-size:13px;text-transform:uppercase;letter-spacing:.04em;padding:7px 14px;}
+  .post .body{padding:22px 20px 20px;flex:1;display:flex;flex-direction:column;}
+  .post .body h3{font-size:19px;line-height:1.15;margin:0 0 10px;}
+  .post .pfoot{margin-top:auto;display:flex;align-items:flex-end;justify-content:space-between;gap:10px;}
+  .post .date{font-size:14px;color:#5d5d5d;}
+  .post .arrow{width:40px;height:40px;color:#fff;display:flex;align-items:center;justify-content:center;font-size:22px;flex:0 0 40px;}
+  .post.article .cat,.post.article .arrow{background:var(--cyan);}
+  .post.event .cat,.post.event .arrow{background:#5b3fa8;}
+  .post.actu .cat,.post.actu .arrow{background:#3aa6d6;}
+  .morelinks{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px;margin-top:24px;}
+  .morelinks a{font-weight:700;font-style:italic;text-decoration:underline;color:var(--ink);}
+  /* CTA intermediaire */
+  .midcta{background:var(--orange);color:#fff;text-align:center;}
+  .midcta h2{color:#fff;}
+  .midcta .btns{display:flex;gap:16px;justify-content:center;flex-wrap:wrap;margin-top:20px;}
+  .midcta .btn{background:#fff;color:var(--ink);}
+  .midcta .btn:hover{background:var(--ink);color:#fff;}
+  @media(max-width:900px){.g3,.g4,.g2,.conv,.posts{grid-template-columns:1fr;}h1{font-size:40px;}h2{font-size:32px;}.stats .num{font-size:76px;}table.cmp,table.cmp tbody,table.cmp tr,table.cmp td{display:block;width:100%;}table.cmp th{display:none;}table.cmp tr{border-bottom:2px solid var(--ink);margin-bottom:12px;}table.cmp tr td:first-child{width:100%;}}
 </style>
 </head>
 <body>
@@ -124,6 +149,7 @@
     <div class="bar"></div>
     <span class="eyebrow" style="color:#fff;opacity:.85">Notre offre</span>
     <h1>Expert comptable<br>profession libérale</h1>
+    <p style="font-family:var(--font-title);text-transform:uppercase;font-weight:400;color:#fff;font-size:24px;line-height:1.15;margin:0 0 18px;opacity:.92;">Expert-comptable, spécialiste des professions libérales</p>
     <p>Médecin, avocat, consultant ou indépendant : un expert-comptable spécialisé qui maîtrise votre régime BNC, vos cotisations et vos arbitrages fiscaux.</p>
     <p style="margin-top:26px;"><a href="#conversion" class="btn orange">Être recontacté</a></p>
   </div>
@@ -137,6 +163,16 @@
     <h2>Un accompagnement dédié aux professions libérales</h2>
     <p class="lead">Vous exercez en libéral et vous cherchez un expert comptable profession libérale qui comprend vraiment les réalités de votre activité. Vous relevez le plus souvent des bénéfices non commerciaux (BNC) et de règles fiscales, sociales et comptables bien spécifiques. Avec un expert-comptable spécialisé, vous sécurisez vos déclarations, vous optimisez votre rémunération et vous gardez l'esprit libre pour vous consacrer à vos patients, vos clients ou vos dossiers.</p>
     <p class="lead">In Extenso accompagne plus de 5 000 professionnels libéraux partout en France, avec un conseiller dédié qui connaît les spécificités de votre métier. C'est ce contact humain et durable qui fait la différence face à une comptabilité 100 % automatisée.</p>
+  </div>
+</section>
+
+<!-- 2b. CHIFFRE CLE (nouveau : reassurance visuelle) -->
+<section class="stats rel">
+  <span class="tag new">Nouveau bloc</span>
+  <div class="wrap">
+    <p class="num">5 000</p>
+    <span class="lab">professionnels libéraux accompagnés</span>
+    <p style="color:#aac4e6;font-size:14px;margin:24px 0 0;">(Chiffre fourni par In Extenso, adapté à chaque page.)</p>
   </div>
 </section>
 
@@ -225,7 +261,7 @@
   <span class="tag new">Nouveau bloc</span>
   <div class="wrap">
     <span class="eyebrow">Budget</span>
-    <h2>Combien coûte un expert-comptable libéral ?</h2>
+    <h2>Professions libérales : combien coûte un expert-comptable In Extenso ?</h2>
     <p class="lead">Les honoraires dépendent de votre volume d'activité, de votre forme juridique et de l'étendue de la mission. Une activité en micro-BNC mobilise un budget plus léger qu'une société d'exercice libéral avec paie et déclarations multiples.</p>
     <ul class="check">
       <li>Le régime fiscal et le volume de pièces comptables à traiter chaque mois.</li>
@@ -248,6 +284,19 @@
       <div class="step"><div class="num">03</div><div><h3>Mise en place</h3><p>Tenue comptable, déclarations, outils en ligne : tout est en place pour que vous n'ayez plus à y penser.</p></div></div>
       <div class="step"><div class="num">04</div><div><h3>Suivi et anticipation</h3><p>Des points réguliers pour anticiper vos cotisations, votre impôt et vos décisions, avant qu'ils ne deviennent des urgences.</p></div></div>
       <div class="step"><div class="num">05</div><div><h3>Conseil dans la durée</h3><p>Rémunération, retraite, patrimoine, transmission : votre conseiller vous accompagne à chaque étape de votre carrière.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- 9b. CTA INTERMEDIAIRE (nouveau : relance en milieu de page) -->
+<section class="midcta rel" style="padding:56px 0;">
+  <span class="tag new">Nouveau bloc</span>
+  <div class="wrap">
+    <span class="eyebrow" style="color:#fff;opacity:.9">Passons à l'action</span>
+    <h2>Un expert-comptable pour votre activité libérale</h2>
+    <div class="btns">
+      <a href="#conversion" class="btn">Être recontacté</a>
+      <a href="#" class="btn">Trouver une agence près de chez vous</a>
     </div>
   </div>
 </section>
@@ -286,7 +335,8 @@
   <span class="tag new">Nouveau bloc</span>
   <div class="wrap">
     <span class="eyebrow">Vos interlocuteurs</span>
-    <h2>Les spécialistes des professions libérales</h2>
+    <h2>Quelques spécialistes des professions libérales</h2>
+    <p class="lead">Plus de 100 experts vous accompagnent en région, de la comptabilité au conseil en gestion de patrimoine.</p>
     <div class="grid g4" style="margin-top:30px;">
       <div class="person"><div class="ph"></div><h3 style="font-size:20px;margin-bottom:4px;">Prénom Nom</h3><div class="role">Responsable pôle professions libérales</div></div>
       <div class="person"><div class="ph"></div><h3 style="font-size:20px;margin-bottom:4px;">Prénom Nom</h3><div class="role">Expert-comptable</div></div>
@@ -326,6 +376,43 @@
       <details><summary>Micro-BNC ou déclaration contrôlée, comment choisir ?</summary><p>Le micro-BNC convient lorsque vos charges sont inférieures à l'abattement forfaitaire de 34 %. Au-delà, la déclaration contrôlée devient plus avantageuse car elle permet de déduire vos charges réelles.</p></details>
     </div>
     <p class="note">Captation longue traîne + visibilité GEO/AEO + balisage schema FAQPage.</p>
+  </div>
+</section>
+
+<!-- 12b. ACTUALITES / BLOG (nouveau : fraicheur editoriale + maillage interne) -->
+<section class="grey rel">
+  <span class="tag new">Nouveau bloc</span>
+  <div class="wrap">
+    <span class="eyebrow">Le mag In Extenso</span>
+    <h2>La bonne info au bon moment : suivez notre actualité</h2>
+    <div class="posts">
+      <article class="post article">
+        <div class="media"><span class="cat">Article</span></div>
+        <div class="body">
+          <h3>Professions libérales : ce qui change pour vos cotisations cette année</h3>
+          <div class="pfoot"><span class="date"></span><span class="arrow">&rsaquo;</span></div>
+        </div>
+      </article>
+      <article class="post event">
+        <div class="media"><span class="cat">Événement</span></div>
+        <div class="body">
+          <h3>Webinaire : optimiser sa rémunération en SEL</h3>
+          <div class="pfoot"><span class="date">Le 10 juillet 2026, 11h30 à 12h30</span><span class="arrow">&rsaquo;</span></div>
+        </div>
+      </article>
+      <article class="post actu">
+        <div class="media"><span class="cat">Actualité</span></div>
+        <div class="body">
+          <h3>Déclaration 2035 : les nouveautés pour les BNC</h3>
+          <div class="pfoot"><span class="date"></span><span class="arrow">&rsaquo;</span></div>
+        </div>
+      </article>
+    </div>
+    <div class="morelinks">
+      <a href="#">Plus d'articles &rarr;</a>
+      <a href="#">Plus d'actualités &rarr;</a>
+    </div>
+    <p class="note">Articles thématisés profession libérale (BNC, SEL, cotisations), affichage dynamique selon la thématique de la page. Fraîcheur éditoriale + maillage interne.</p>
   </div>
 </section>
 
